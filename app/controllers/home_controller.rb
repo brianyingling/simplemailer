@@ -6,6 +6,6 @@ class HomeController < ApplicationController
     email = params[:email]
     body = params[:message]
     message = Message.create(:first_name=>first_name, :last_name=>last_name, :email=>email, :message=>body)
-    render :nothing => true
+    # render :nothing => true
   end
 end
